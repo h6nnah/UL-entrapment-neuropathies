@@ -20,6 +20,11 @@ color: #CE5937;
   transition: opacity .2s;
 }
 
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -36,10 +41,5 @@ color: #CE5937;
   border-radius: 50%;
   background: #04AA6D;
   cursor: pointer;
-}
-
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
 }
 
