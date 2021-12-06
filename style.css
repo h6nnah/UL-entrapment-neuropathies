@@ -4,6 +4,18 @@ font-family: Impact, sans-serif;
 color: #CE5937;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .slidecontainer {
   width: 100%; /* Width of the outside container */
 }
