@@ -5,12 +5,12 @@ color: #CE5937;
 }
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 90%; /* Width of the outside container */
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   height: 15px;
   border-radius: 5px;  
   background: #d3d3d3;
