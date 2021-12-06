@@ -17,16 +17,26 @@
 <p>Please adjust the sliders at the bottom of the page to view simulated cutaneous and motor deficits</p>
   
 <div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <input type="range" min="1" max="100" value="50" class="sliderM" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+  
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="sliderU" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+  
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="sliderR" id="myRange">
   <p>Value: <span id="demo"></span></p>
 </div>
 
 <script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+var sliderM = document.getElementById("myRange");
+var outputM = document.getElementById("demo");
+output.innerHTML = sliderM.value;
 
-slider.oninput = function() {
+sliderM.oninput = function() {
   output.innerHTML = this.value;
 }
 </script>
