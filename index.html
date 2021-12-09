@@ -2,48 +2,63 @@
 <html>
   
 <head>
-<title>Upper Limb Nerve Lesion Simulator</title>
+<title>Upper Limb Entrapment Neuropathies</title>
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <style>html,body,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}</style>
-  
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="script.js"></script>
 </head>
   
   
 <body>
 
-<h1 class="lw">Upper Limb Nerve Lesion Simulator</h1>
-<p>Please adjust the sliders at the bottom of the page to view simulated cutaneous and motor deficits</p>
+  <h1>Upper Limb Entrapment Neuropathies</h1>
 
-<h2>Median Nerve</h2>
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="sliderM" id="myRangeM">
+<p>Choose a peripheral nerve to view its common sites of entrapment.</p>
+  
+<div class="box" id="nerve">
+  <div>
+    <input type="radio" id="median" name="nerve" value="Median" checked>
+    <label for="median">Median nerve</label>
+  </div>
+  <div>
+    <input type="radio" id="ulnar" name="nerve" value="Ulnar">
+    <label for="ulnar">Ulnar nerve</label>
+  </div>
+  <div>
+    <input type="radio" id="radial" name="nerve" value="Radial">
+    <label for="radial">Radial nerve</label>
+  </div>
+</div>
+<p></p>
+<button name="nerve" onclick="this.form.submit()" >Submit</button>
+<button onclick="updateNerve()" >Update</button>
+
+  
+<div>
+  <p>Adjust the slider to view sensory & motor deficits associated with each entrapment site.</p>
 </div>
 
-<h2>Ulnar Nerve</h2>
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="sliderU" id="myRangeU">
-</div>
-
-<h2>Radial Nerve</h2>
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="sliderR" id="myRangeR">
+<!-- -->
+<p id="test">test</p>
+  
+<div id="Mcard" hidden>
+  <h2>Median Nerve</h2>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="sliderM" id="myRangeM">
+  </div>
+  <img src="full.png" alt="Upper Limb" style="width:50%;height:50%;">
 </div>
   
-<img src="full.png" alt="Upper Limb" style="width:50%;height:50%;">
-
-
-<script>
-var sliderM = document.getElementById("myRangeM");
-var outputM = document.getElementById("M");
-outputM.innerHTML = sliderM.valueM;
-
-sliderM.oninput = function() {
-  outputM.innerHTML = this.valueM;
-}
-</script>
+<div id="Ucard" hidden>
+  <h2>Ulnar Nerve</h2>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+  <img src="full.png" alt="Upper Limb" style="width:50%;height:50%;">
+</div>
 
   
 </body>
 </html>
+
