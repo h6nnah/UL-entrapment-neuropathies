@@ -1,49 +1,39 @@
 h1 {color: #CE5937;}
 
-html,body,h1,h2,h3,h4,h5,h6,button {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif}
+html,body,h1,h2,h3,h4,h5,h6,button {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 .box {
-  padding: 15px;
+  padding: 10px;
   width: 125px;
   border-radius: 5px; 
   background: #d3d3d3;
   opacity: 0.7;
 }
 
-.slidecontainer {
-  width: 30px; /* Width of the outside container */
+:root {
+    --x: 0.5;
+    --y: 0.5;
 }
 
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+.container, .tracker {
+    position: absolute;
 }
 
-.slider {
-  -webkit-appearance: slider-vertical;
-  width: 15px;
-  height: 150px;
-  border-radius: 5px;  
-    background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+.container {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #333;
 }
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: None;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-    background: #ffde00;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #CE5937/*#04AA6D*/;
-  cursor: pointer;
+  
+.tracker {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+    background: red;
+    border-radius: 1000px;
+    transform: translate(calc(-50% + 200px * var(--x)), calc(-50% + 200px * var(--y)));
 }
