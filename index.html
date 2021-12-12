@@ -7,35 +7,39 @@
   
 <script type="text/javascript" src="script.js"></script>
 </head>
+  
 <body>
 <h1>Upper Limb Entrapment Neuropathies</h1>
+  
 <p>Choose a peripheral nerve to view its common sites of entrapment.</p>
 
 <div class="box" id="nervebox">
-<input type="radio" name="nerveButton" value="0" id="median" onclick="UpdateImg(this.value, this.id)" checked> Median
-<br/>
-<input type="radio" name="nerveButton" value="1" id="ulnar" onclick="UpdateImg(this.value, this.id)"> Ulnar
-<br/>
-<input type="radio" name="nerveButton" value="2" id="radial" onclick="UpdateImg(this.value, this.id)"> Radial
-<br/>
+  <input type="radio" name="nerveButton" value="0" id="Median nerve" onclick="updateNerve(this.value, this.id)" checked> Median nerve
+  <br/>
+  <input type="radio" name="nerveButton" value="1" id="Ulnar nerve" onclick="updateNerve(this.value, this.id)"> Ulnar nerve
+  <br/>
+  <input type="radio" name="nerveButton" value="2" id="Radial nerve" onclick="updateNerve(this.value, this.id)"> Radial nerve
+  <br/>
 </div>
-<div><p>Adjust the slider to view sensory & motor deficits associated with each entrapment site.</p></div>
+  
+<div>
+   <p>Adjust the slider to view sensory & motor deficits associated with each entrapment site.</p>
+</div>
 
-<p>
 <h2 id="nerveTitle">Median Nerve</h2>
   
-<div style="width: 600px; display: table;">
+<div style="width: 400px; display: table;">
   <div style="display: table-row">
     
-    <div style="width: 300px; display: table-cell;">
-      <img id="NerveImg" src="https://teachmeanatomy.info/wp-content/uploads/Anatomical-Course-of-the-Median-Nerve-through-the-Upper-Limb.jpg" alt="Median" height="200" width="200">     </div>
-    
-    <div style="width: 15px; display: table-cell;">
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="sliderM" id="myRangeM">
-      </div>
+    <div style="width: 200px; display: table-cell;">
+      <img id="nerveImg" src="https://www.bartleby.com/107/Images/large/image816.gif" alt="Median nerve" height="400" width="200">
     </div>
     
+  </div>
+</div>
+  
+<div class="container">
+  <div class="tracker">
   </div>
 </div>
 
