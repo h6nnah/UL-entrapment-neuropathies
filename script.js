@@ -1,36 +1,31 @@
 var ImgArray = [
-  "full.png",
-  "https://www.bartleby.com/107/Images/large/image816.gif",
-  "https://www.bartleby.com/107/Images/large/image818.gif",
-  "full.png",
+  "photo3.png",
+  "photo2.png",
+  "photo1.png",
 ];
 
 var TitleArray = [
   "Ligament of Struthers",
   "Pronator teres syndrome",
-  "Anterior interosseous syndrome",
   "Transverse carpal ligament (Carpal tunnel syndrome)"
 ];
 
 var MotorArray = [
   "pronator teres m., flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
   "flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
-  "Flexor pollicis longus m.",
   "Flexor pollicis brevis m. (superficial head), abductor pollicis brevis m., opponens pollicis m., Lumbrical mm. to digits 2 and 3"
 ];
 
 var BranchArray = [
   "",
   "flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
-  "Anterior interosseus n. from median n.",
   "recurrent branch of median n."
 ];
 
 var SignArray = [
-  "Hand of benediction",
-  "",
-  "",
-  "ape hand"
+  "Ape hand <br>Hand of benediction",
+  "Ape hand",
+  "Ape hand"
 ];
 
 function updateE(EVal) {
