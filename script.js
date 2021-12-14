@@ -1,7 +1,7 @@
 var ImgArray = [
   "photo3.png",
   "photo2.png",
-  "photo1.png",
+  "photo1.png"
 ];
 
 var TitleArray = [
