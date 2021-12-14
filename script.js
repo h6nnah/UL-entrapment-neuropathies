@@ -37,5 +37,6 @@ function updateE(EVal) {
   document.getElementById('EImg').src = ImgArray[EVal];
   document.getElementById('EImg').alt = TitleArray[EVal];
   document.getElementById('ETitle').innerHTML = TitleArray[EVal];
+  document.getElementById('ESImg').alt = SignArray[EVal];
   document.getElementById('motor').innerHTML = MotorArray[EVal];
 }
