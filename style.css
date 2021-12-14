@@ -9,31 +9,3 @@ html,body,h1,h2,h3,h4,h5,h6,button {font-family: "Helvetica Neue", Helvetica, Ar
   background: #d3d3d3;
   opacity: 0.7;
 }
-
-:root {
-    --x: 0.5;
-    --y: 0.5;
-}
-
-.container, .tracker {
-    position: absolute;
-}
-
-.container {
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid #333;
-}
-  
-.tracker {
-    width: 10px;
-    height: 10px;
-    left: 0;
-    top: 0;
-    background: red;
-    border-radius: 1000px;
-    transform: translate(calc(-50% + 200px * var(--x)), calc(-50% + 200px * var(--y)));
-}
