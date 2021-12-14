@@ -15,13 +15,13 @@
 <p>Choose a site of entrapment to view the associated sensory & motor deficits.</p>
 
 <div class="box" id="Ebox">
-  <input type="radio" name="EButton" value="0" id="0" onclick="updateE(this.value, this.id)" checked> Ligament of Struthers
+  <input type="radio" name="EButton" value="0" id="0" onclick="updateE(this.value, this.id)"> Ligament of Struthers
   <br/>
   <input type="radio" name="EButton" value="1" id="1" onclick="updateE(this.value, this.id)"> Pronator Teres m. (Pronator syndrom)
   <br/>
   <input type="radio" name="EButton" value="2" id="2" onclick="updateE(this.value, this.id)"> Flexor pollicis longus m. (Anterior interosseus syndrome)
   <br/>
-  <input type="radio" name="EButton" value="3" id="3" onclick="updateE(this.value, this.id)"> Transverse carpal ligament (Carpal tunnel syndrome)
+  <input type="radio" name="EButton" value="3" id="3" onclick="updateE(this.value, this.id)" checked> Transverse carpal ligament (Carpal tunnel syndrome)
   <br/>
   <input type="radio" name="EButton" value="4" id="4" onclick="updateE(this.value, this.id)"> Transverse metacarpal ligament (Bowler's thumb)
   <br/>
@@ -29,7 +29,11 @@
 
 <h2 id="ETitle">Transverse carpal ligament (Carpal tunnel syndrome)</h2>
 <img id="EImg" src="full.png" alt="Transverse carpal ligament (Carpal tunnel syndrome)" height="400" width="200">
+
 <p>Motor deficits:</p>
+<div id="motor">
+  
+</div>
 
 </body>
 </html>
