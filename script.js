@@ -1,5 +1,5 @@
 var ImgArray = [
-  "https://www.bartleby.com/107/Images/large/image816.gif",
+  "full.png",
   "https://www.bartleby.com/107/Images/large/image816.gif",
  "https://www.bartleby.com/107/Images/large/image818.gif"
 ];
@@ -8,20 +8,12 @@ var TitleArray = [
   "Median Nerve",
   "Carpal Tunnel",
   "Thoracic Outlet Syndrome"
-  "Ulnar Nerve",
-  "Radial Nerve"
 ];
 
 function updateNerve(nerveVal, nerveId) {
-  var nerveVal = nerveVal
   document.getElementById('nerveImg').src = ImgArray[nerveVal];
   document.getElementById('nerveImg').alt = nerveId;
   document.getElementById('nerveTitle').innerHTML = TitleArray[nerveVal];
-}
-
-function updateLesion() {
-   var x = document.getElementById('lesionSlider').value;
-  document.getElementById(lesionTitle).innerHTML = x;
 }
 
 const pos = { x : 0, y : 0 };
