@@ -7,18 +7,18 @@ var ImgArray = [
 var TitleArray = [
   "Ligament of Struthers",
   "Pronator teres syndrome",
-  "Transverse carpal ligament (Carpal tunnel syndrome)"
+  "Carpal tunnel syndrome"
 ];
 
 var MotorArray = [
-  "pronator teres m., flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
-  "flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
-  "Flexor pollicis brevis m. (superficial head), abductor pollicis brevis m., opponens pollicis m., Lumbrical mm. to digits 2 and 3"
+  "flexor pollicis brevis m. (superficial head) <br>abductor pollicis brevis m. <br>opponens pollicis m. <br>Lumbrical mm. to digits 2 and 3 <br>flexor pollicis longus m. <br>abductor pollicis brevis m. <br>flexor digitorum profundus m. to digits 2 and 3 <br>opponens pollicis m. <br>pronator teres m.",
+  "flexor pollicis brevis m. (superficial head) <br>abductor pollicis brevis m. <br>opponens pollicis m. <br>Lumbrical mm. to digits 2 and 3 <br>flexor pollicis longus m. <br>abductor pollicis brevis m. <br>flexor digitorum profundus m. to digits 2 and 3 <br>opponens pollicis m.",
+  "flexor pollicis brevis m. (superficial head) <br>abductor pollicis brevis m. <br>opponens pollicis m. <br>Lumbrical mm. to digits 2 and 3"
 ];
 
 var BranchArray = [
-  "",
-  "flexor pollicis longus m., abductor pollicis brevis m., flexor digitorum profundus m. to digits 2 and 3, and opponens pollicis m.",
+  "flexor pollicis longus m. <br>abductor pollicis brevis m. <br>flexor digitorum profundus m. to digits 2 and 3 <br>opponens pollicis m.",
+  "flexor pollicis longus m. <br>abductor pollicis brevis m. <br>flexor digitorum profundus m. to digits 2 and 3 <br>opponens pollicis m.",
   "recurrent branch of median n."
 ];
 
