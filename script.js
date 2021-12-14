@@ -14,8 +14,17 @@ var TitleArray = [
   "Transverse metacarpal ligament (Bowler's thumb)"
 ];
 
+var MotorArray = [
+  "1, 2, 3, 4, 5",
+  "1, 2, 3, 4",
+  "1, 2, 3",
+  "1, 2",
+  "1"
+];
+
 function updateE(EVal, EId) {
   document.getElementById('EImg').src = ImgArray[EVal];
   document.getElementById('EImg').alt = TitleArray[EId];
   document.getElementById('ETitle').innerHTML = TitleArray[EVal];
+  document.getElementById('motor').innerHTML = MotorArray[EVal];
 }
