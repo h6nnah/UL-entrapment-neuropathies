@@ -16,6 +16,6 @@ var TitleArray = [
 
 function updateE(EVal, EId) {
   document.getElementById('EImg').src = ImgArray[EVal];
-  document.getElementById('EImg').alt = EId;
+  document.getElementById('EImg').alt = TitleArray[EId];
   document.getElementById('ETitle').innerHTML = TitleArray[EVal];
 }
