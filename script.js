@@ -22,9 +22,9 @@ var MotorArray = [
   "1"
 ];
 
-function updateE(EVal, EId) {
+function updateE(EVal) {
   document.getElementById('EImg').src = ImgArray[EVal];
-  document.getElementById('EImg').alt = TitleArray[EId];
+  document.getElementById('EImg').alt = TitleArray[EVal];
   document.getElementById('ETitle').innerHTML = TitleArray[EVal];
   document.getElementById('motor').innerHTML = MotorArray[EVal];
 }
