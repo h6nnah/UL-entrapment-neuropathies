@@ -9,34 +9,26 @@
 </head>
   
 <body>
-<h1>Upper Limb Entrapment Neuropathies</h1>
+<h1>Median Nerve Entrapment Neuropathies</h1>
   
-<p>Choose a peripheral nerve to view its common sites of entrapment.</p>
+<p>Choose a site of entrapment to view the associated sensory & motor deficits.</p>
 
 <div class="box" id="nervebox">
-  <input type="radio" name="nerveButton" value="0" id="Median nerve" onclick="updateNerve(this.value, this.id)" checked> Median nerve
+  <input type="radio" name="nerveButton" value="0" id="0" onclick="updateNerve(this.value, this.id)" checked> Ligament of Struthers
   <br/>
-  <input type="radio" name="nerveButton" value="1" id="Ulnar nerve" onclick="updateNerve(this.value, this.id)"> Ulnar nerve
+  <input type="radio" name="nerveButton" value="1" id="1" onclick="updateNerve(this.value, this.id)"> Pronator Teres m. (Pronator syndrom)
   <br/>
-  <input type="radio" name="nerveButton" value="2" id="Radial nerve" onclick="updateNerve(this.value, this.id)"> Radial nerve
+  <input type="radio" name="nerveButton" value="2" id="2" onclick="updateNerve(this.value, this.id)"> Flexor pollicis longus m. (Anterior interosseus syndrome)
   <br/>
-</div>
-  
-<div>
-   <p>Adjust the slider to view sensory & motor deficits associated with each entrapment site.</p>
+  <input type="radio" name="nerveButton" value="3" id="3" onclick="updateNerve(this.value, this.id)"> Transverse carpal ligament (Carpal tunnel syndrome)
+  <br/>
+  <input type="radio" name="nerveButton" value="4" id="4" onclick="updateNerve(this.value, this.id)"> Transverse metacarpal ligament (Bowler's thumb)
+  <br/>
 </div>
 
-<h2 id="nerveTitle">Median Nerve</h2>
-  
-<div style="width: 400px; display: table;">
-  <div style="display: table-row">
-    
-    <div style="width: 200px; display: table-cell;">
-      <img id="nerveImg" src="https://www.bartleby.com/107/Images/large/image816.gif" alt="Median nerve" height="400" width="200">
-    </div>
-    
-  </div>
-</div>
+<h2 id="nerveTitle">Transverse carpal ligament (Carpal tunnel syndrome)</h2>
+<img id="nerveImg" src="https://www.bartleby.com/107/Images/large/image816.gif" alt="Median nerve" height="400" width="200">
+  <p>Motor deficits:</p>
   
 <div class="container">
   <div class="tracker">
